@@ -9,6 +9,6 @@ int SummNumners (int num1, int num2)
 {
     if (num1==num2)
        return num1;
-    else {return SummNumners((num2-1) + num2);}
+    else {return num1 + SummNumners(num1+1,num2);}
 }
-Console.WriteLine(SummNumners(2,8));
+Console.WriteLine(SummNumners(4,10));
